@@ -898,8 +898,8 @@
 	}
 
 	#header {
-		background: #fff;
-		color: #555f66;
+		background: black;
+		color: white;
 		cursor: default;
 		height: 3em;
 		left: 0;
@@ -912,7 +912,7 @@
 	}
 
 		#header h1 {
-			color: #666f77;
+			color: white;
 			font-weight: 500;
 			height: inherit;
 			left: 1.25em;
