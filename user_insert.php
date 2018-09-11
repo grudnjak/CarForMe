@@ -22,7 +22,7 @@ if (!empty($first_name) && !empty($last_name) && !empty($email)
    
     
 $stmt = $pdo->prepare($query);
-$stmt->execute([$first_name,$last_name,$email,$pass1,$date,$tel,$kraj]);
+$stmt->execute([$first_name,$last_name,$email,$pass,$date,$tel,$kraj]);
 }
 else {
     //preusmeritev nazaj
