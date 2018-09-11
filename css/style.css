@@ -818,7 +818,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #629DD1;
+			background-color: #808080;
 			color: #ffffff !important;
 		}
 
@@ -826,7 +826,7 @@
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #76a9d7;
+				background-color: #A9A9A9;
 			}
 
 			input[type="submit"].special:active,
@@ -955,13 +955,13 @@
 						-o-transition: color 0.2s ease-in-out;
 						-ms-transition: color 0.2s ease-in-out;
 						transition: color 0.2s ease-in-out;
-						color: #555f66;
+						color: white;
 						display: inline-block;
 						text-decoration: none;
 					}
 
 						#header nav > ul > li a:hover {
-							color: #629DD1;
+							color: gray;
 						}
 
 					#header nav > ul > li:first-child {

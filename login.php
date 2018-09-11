@@ -13,7 +13,3 @@
     <input type="submit" value="Prijavi" />
 </form>
 </div>
-
-<?php
-    include_once './footer.php';
-?>

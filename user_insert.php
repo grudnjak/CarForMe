@@ -17,10 +17,12 @@ if (!empty($first_name) && !empty($last_name) && !empty($email)
     //vse ok
     $pass = $salt.$pass1;
     $pass = sha1($pass);
-    $query = "INSERT INTO osebe(ime,priimek,mail,geslo,datum_roj,tel_stevilka,kraj_id) "
-            . "VALUES ('$first_name','$last_name','$email','$pass',$date,$tel,(SELECT id FROM kraji k WHERE k.ime='$kraj'))";
-    mysqli_query($link, $query);
+    $query = "INSERT INTO osebe(ime,priimek,mail,geslo,datum_roj,tel_stevlika,kraj_id) "
+            . "VALUES (?,?,?,?,?,?,(SELECT id FROM kraji k WHERE k.ime=?))";
+   
     
+$stmt = $pdo->prepare($query);
+$stmt->execute([$first_name,$last_name,$email,$pass1,$date,$tel,$kraj]);
 }
 else {
     //preusmeritev nazaj

@@ -2,14 +2,16 @@
     include_once './header.php';
       include_once './database.php';
    $query1 = "SELECT ime FROM kraji k ";
-   $result1 = mysqli_query($link, $query1);
-   $options= "";
+   $stmt = $pdo->prepare($query1); 
+   $stmt->execute();
+      $options= "";
+while ($row = $stmt->fetch()) {
+ 
+    $options = $options."<option>$row[ime]</option>";
+}
+
    
-   while ($row2 = mysqli_fetch_array($result1))
-   {
-       $options = $options."<option>$row2[ime]</option>";
-       
-   }
+
 ?>
 <div class="box">
 <form action="user_insert.php" method="post">
@@ -38,7 +40,3 @@
 </form>
 
 </div>
-
-<?php
-    include_once './footer.php';
-?>
