@@ -32,11 +32,11 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="index.php">Home</a></li>
-						<li><a href="apartmaji.php">Avtomobili</a></li>
+						<li><a href="avtomobili.php">Avtomobili</a></li>
                                                     <?php
                                         
                                         if (isset($_SESSION['user_id'])) {
-                                            echo '  <li><a href="dodajanje_apartmaji.php">Dodaj apartma</a></li>';
+                                            echo '  <li><a href="dodajanje_avtomobili.php">Dodaj avtomobil</a></li>';
                                         }
                                         else {
                                             

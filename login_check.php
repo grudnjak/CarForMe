@@ -23,10 +23,10 @@ $prijava =0;
             $stmt->execute([$email]);
             while ($row = $stmt->fetch()) {
 
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['first_name'] = $user['ime'];
-            $_SESSION['last_name'] = $user['priimek'];
-            $_SESSION['dovoljenje'] = $user['dovoljenje_id'];}
+            $_SESSION['user_id'] = $row['id'];
+            $_SESSION['first_name'] = $row['ime'];
+            $_SESSION['last_name'] = $row['priimek'];
+            $_SESSION['dovoljenje'] = $row['dovoljenje_id'];}
            
             if ($user['id'] == 3){
             
