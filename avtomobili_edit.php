@@ -11,13 +11,23 @@ $stmt = $pdo->prepare($query4);
 $stmt->execute([$idapp]);
 $row = $stmt->fetch();
 $model= $row['model'];
-$query = "SELECT m.ime FROM modeli m INNER JOIN avtomobili a ON m.id=a.model_id WHERE a.model_id=? LIMIT 1";
+$query = "SELECT m.ime as mime,m.id as mid FROM modeli m ";
 $stmt1 = $pdo->prepare($query);
-$stmt1->execute([$model]);
+$stmt1->execute();
 $options1 = "";
+
+
 while ($row1 = $stmt1->fetch()) {
 
-    $options1 = $options1 . "<option>$row1[ime]</option>";
+   if($row1['mid'] == $row['model'])
+       { $options1 = $options1."<option selected=\"selected\">$row1[mime]</option>";
+       
+       }
+       
+       else{
+           $options1 = $options1."<option>$row1[mime]</option>";
+       }
+       
 }
 ?>
 <div class="box">
