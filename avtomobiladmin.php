@@ -1,8 +1,7 @@
 <?php
-
-include_once './header.php';
-include_once './database.php';
-$idapp = $_GET['id'];
+    include_once './headeradmin.php';
+    include_once './database.php';
+    $idapp = $_GET['id'];
 
 
 $query = "SELECT a.ime as aime ,a.naslov,k.ime,s.url as url,a.id FROM avtomobili a INNER JOIN kraji k ON k.id = a.kraj_id INNER JOIN slike s ON a.id=s.avtomobil_id  WHERE a.id = ? ";
@@ -35,10 +34,7 @@ while ($row = $stmt->fetch()) {
     echo "<h1>Kraj:</h1>";
     echo "<h2>$row[ime]</h2>";
     echo "<ul class=\"actions\">";
-
-    echo "<li><a href=\"rezervacija.php?id=$row[id]\" class=\"button alt\">Rezervacija</a></li><li><br></li>";
-
-    echo "<li><a href=\"vse_rezervacija.php?id=$row[id]\" class=\"button alt\">Vse rezervacije</a></li>";
+    echo "<li><a href=\"vse_rezervacija_admin.php?id=$row[id]\" class=\"button alt\">Vse rezervacije</a></li>";
     echo "</ul>";
     echo "</div>";
     echo "</div>";
