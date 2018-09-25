@@ -11,7 +11,7 @@ $allowed = ['/CarForMe/login.php','/CarForMe/login_check.php',
  if (!isset($_SESSION['user_id']) && 
        !in_array($_SERVER['REQUEST_URI'], $allowed)) {
     
-     header("Location: login.php");
+    // header("Location: login.php");
  
        }
    

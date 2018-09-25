@@ -12,7 +12,6 @@ $tel = $_POST ['tel'];
 $kraj = $_POST ['kraj'];
 
 
-
 //preverim. če je uporabnik pravilno izpolnil obrazec
 if (!empty($first_name) && !empty($last_name) && !empty($email)
         && !empty($pass1) && ($pass1==$pass2)) {
@@ -28,20 +27,22 @@ if (!empty($first_name) && !empty($last_name) && !empty($email)
 $stmt = $pdo->prepare($query);
         $stmt->execute([$first_name,$last_name,$email,$pass,$date,$tel,$kraj]); 
        
+        
+        
+     header("Location: login.php");
+    
         }
     
     
  else {
-  
-    
- header("Location: registration.php?e=1");
+           
+           header("Location: ./registration.php?e=1");
+ 
  
  }
    
- header("Location: login.php"); 
+
    
-    
-    
  
       
 
