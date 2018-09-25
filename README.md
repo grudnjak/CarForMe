@@ -3,3 +3,4 @@ Projekt z katerim si lahko izposojaš avtomobilie. Aplikacija omogoca registraci
 Admin lahko ureja vse avtomobile, znamke, modele brez da bi uporabil direkten dostop do baze oz phpmyadmin.
 Avtomobil lahko  opises dodas sliko ... Ostali si  pa lahko izberete, kdo oz. kdaj bi si izposodil avtomobil.
 
+<img width="819" alt="baza slika" src="https://user-images.githubusercontent.com/35597362/46000942-50f4e480-c0aa-11e8-8b1a-3024b49f70f5.png">
