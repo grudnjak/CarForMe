@@ -16,7 +16,7 @@ echo "<tr><td>Ime avtomobila</td><td>Datum od</td><td>Datum do</td><td>Ime in Pr
 
 while ($row = $stmt->fetch()) {    
 
-    echo " <tr><td>" . $row['aime'] . "</a></td><td>" . substr($row['datumod'], 0, -9) . "</td><td>" . substr($row['datumdo'], 0, -9) . "</td><td>" . $row['oime'] . " " . $row['opriimek'] . "</td></tr>";
+    echo " <tr><td>" . $row['aime'] . "</a></td><td>" . substr($row['datumdo'], 0, -9) . "</td><td>" . substr($row['datumod'], 0, -9) . "</td><td>" . $row['oime'] . " " . $row['opriimek'] . "</td></tr>";
 }
 
 echo "</table>";

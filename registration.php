@@ -9,9 +9,11 @@ while ($row = $stmt->fetch()) {
  
     $options = $options."<option>$row[ime]</option>";
 }
-
+if(isset($_GET['e']))
+{
+    echo 'Gesla se ne ujemata';
+}
    
-
 ?>
 <div class="box">
 <form action="user_insert.php" method="post">
