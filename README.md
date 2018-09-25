@@ -12,4 +12,5 @@ Vsak uporbnik se registrira z mailu ter svojim geslom in vpiše vse podatke.
 
 
 
-<img width="819" alt="baza slika" src="https://user-images.githubusercontent.com/35597362/46000942-50f4e480-c0aa-11e8-8b1a-3024b49f70f5.png">
+<img width="1071" alt="screen shot 2018-09-25 at 11 28 49" src="https://user-images.githubusercontent.com/35597362/46005750-42142f00-c0b6-11e8-91c9-18f681bb319a.png">
+
