@@ -1,6 +1,9 @@
 <?php
+    include_once './database.php';
     include_once './session.php';
-?>
+    require_once('settings.php');
+
+    ?>
 <!DOCTYPE HTML>
 <!--
 	Ion by TEMPLATED
@@ -58,6 +61,7 @@
                                         else {
                                             echo ' <a href="login.php" class="button special ">Log in</a> ';
                                             echo ' <a href="registration.php" class="button alt">Register</a> ';
+                                           
                                         }
                                     ?>
                                                 
