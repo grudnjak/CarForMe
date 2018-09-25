@@ -16,6 +16,7 @@ $stmt1 = $pdo->prepare($query);
 $stmt1->execute();
 $options1 = "";
 
+//Dodajanje modelov v options, da jih prikaze v drop down meniju
 
 while ($row1 = $stmt1->fetch()) {
 

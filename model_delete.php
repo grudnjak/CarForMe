@@ -2,6 +2,7 @@
     include_once './session.php';
     include_once './database.php';
 
+    //brisanje modela
     $id = (int) $_GET['id'];
     
     

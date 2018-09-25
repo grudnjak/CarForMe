@@ -10,7 +10,7 @@ $app_znamka = $_POST['app_znamka'];
 $app_model = $_POST['app_model'];
 $_SESSION["app_ime"] = $app_ime;
 
-
+//dodajanje avtomobila v bazo
 
 //preverim. če je uporabnik pravilno izpolnil obrazec
 if (!empty($app_ime) && !empty($app_opis) && !empty($app_naslov))

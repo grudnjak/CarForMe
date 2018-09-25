@@ -1,7 +1,7 @@
 <?php
     include_once './session.php';
     include_once './database.php';
-  
+  //update avtomobila
     $ime = $_POST['ime'];
     $opis = $_POST['opis'];
     $naslov = $_POST['naslov'];

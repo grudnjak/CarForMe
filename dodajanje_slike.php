@@ -1,4 +1,6 @@
 <?php
+
+//forma za dodajanje slik
     include_once './header.php';
     ?>
 

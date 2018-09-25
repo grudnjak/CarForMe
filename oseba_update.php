@@ -1,7 +1,7 @@
 <?php
     include_once './session.php';
     include_once './database.php';
-  
+  //spreminjanje pod o osebi
     $ime = $_POST['ime'];
     $priimek = $_POST['priimek'];
     $datum_roj = $_POST['datum_roj'];

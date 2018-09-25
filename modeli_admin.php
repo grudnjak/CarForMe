@@ -2,7 +2,7 @@
 
 include_once './headeradmin.php';
 include_once './database.php';
-
+//izpis vseh modelov 
 $query = "SELECT m.id as mid, m.ime as mime,z.ime as zime FROM modeli m INNER JOIN znamke z ON m.znamka_id=z.id ";
 $stmt = $pdo->prepare($query);
 $stmt->execute();

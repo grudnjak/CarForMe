@@ -1,5 +1,7 @@
 <?php
     include_once './session.php';
+    
+    //header za admina
 ?>
 <!DOCTYPE HTML>
 <!--

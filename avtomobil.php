@@ -4,7 +4,7 @@ include_once './header.php';
 include_once './database.php';
 $idapp = $_GET['id'];
 
-
+//pridobivanje pod o avtomobilu
 $query = "SELECT a.ime as aime ,a.naslov,k.ime,s.url as url,a.id FROM avtomobili a INNER JOIN kraji k ON k.id = a.kraj_id INNER JOIN slike s ON a.id=s.avtomobil_id  WHERE a.id = ? ";
 $stmt = $pdo->prepare($query);
 $stmt->execute([$idapp]);
@@ -19,7 +19,7 @@ echo "<section id=\"three\" class=\"wrapper style1\">";
 echo "<div class=\"container\">";
 echo "<div class=\"row\"><div class=\"8u\"><section>";
 
-
+//izpis vseh avtomobilov
 while ($row = $stmt->fetch()) {
     if (!empty($row['url'])) {
         echo "<img src=\"$row[url]\" alt=\"$row[aime]\" class=\"app_slika\" > ";

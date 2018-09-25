@@ -3,7 +3,8 @@
     include_once './database.php';
 
     $id = (int) $_GET['id'];
-    
+        //delete avtomobila iz baze
+
     
     $query = "DELETE FROM avtomobili WHERE id=?";
    $stmt = $pdo->prepare($query);

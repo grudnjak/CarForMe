@@ -3,14 +3,14 @@ include_once './headeradmin.php';
 include_once './database.php';
 
 $idapp = isset($_GET['id']) ? $_GET['id'] : '';
-
+//urejanje modela
 
 $query4 = "SELECT m.id as mid ,m.ime as mime, z.ime as zime, z.id as zid, m.st_vrat as vrata, m.moc as moc FROM znamke z INNER JOIN modeli m ON m.znamka_id=z.id WHERE m.id=?";
 $stmt = $pdo->prepare($query4);
 $stmt->execute([$idapp]);
 $row = $stmt->fetch();
 
-
+//izpis znamke v option
 $znamka = $row['zid'];
 $query = "SELECT ime,id FROM znamke z  ";
 $stmt1 = $pdo->prepare($query);

@@ -1,7 +1,7 @@
 <?php
     include_once './session.php';
     include_once './database.php';
-
+//brisanje osebe
     $id = (int) $_GET['id'];
 
     

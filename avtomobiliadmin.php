@@ -3,6 +3,8 @@
 include_once './headeradmin.php';
 include_once './database.php';
 
+//pridobivanje pod o avtomobilih
+
 $query = "SELECT a.id as aid, a.ime  as aime ,a.opis as aopis,k.ime as kime ,m.ime as mime,z.ime as zime, o.id as oid FROM avtomobili a INNER JOIN kraji k ON k.id = a.kraj_id INNER JOIN modeli m ON m.id=a.model_id INNER JOIN znamke z ON z.id=m.znamka_id INNER JOIN osebe o ON o.id=a.oseba_id";
 $stmt = $pdo->prepare($query);
 $stmt->execute();

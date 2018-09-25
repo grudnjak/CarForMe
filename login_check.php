@@ -2,7 +2,7 @@
 
 include_once './session.php';
 include_once './database.php';
-
+//login check
 $email = $_POST['email'];
 $pass = $_POST['pass'];
 

@@ -9,7 +9,7 @@ $moc = $_POST['moc'];
 $st_vrat= $_POST['vrata'];
 
 
-
+//model insert
 
 
 //preverim. če je uporabnik pravilno izpolnil obrazec

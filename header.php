@@ -1,7 +1,7 @@
 <?php
     include_once './database.php';
     include_once './session.php';
-
+//header za vse uporabnike
 
     ?>
 <!DOCTYPE HTML>

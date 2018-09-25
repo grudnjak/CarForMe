@@ -1,7 +1,7 @@
 <?php
     include_once './session.php';
     include_once './database.php';
-  
+  //model update 
     $ime = $_POST['ime'];
     $idapp = $_POST['id'];
     $moc = $_POST['moc'];

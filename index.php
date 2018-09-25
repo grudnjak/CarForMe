@@ -1,7 +1,7 @@
 <?php
     include_once './header.php';
      include_once './database.php';
-        
+    //index prikazovanje counterja    
     $query = "SELECT COUNT(*) FROM avtomobili";
     $stmt = $pdo->prepare($query); 
     $stmt->execute();

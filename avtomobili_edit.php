@@ -4,7 +4,7 @@ include_once './database.php';
 
 $idapp = isset($_GET['id']) ? $_GET['id'] : '';
 
-
+//pridobivanje podatkov v tocno dolocenem avtomobilu
 $query4 = "SELECT a.id as aid,a.ime as aime,a.opis as aopis,a.naslov as anaslov,m.ime as mime, a.model_id as model FROM avtomobili a INNER JOIN kraji k ON k.id=a.kraj_id INNER JOIN modeli m ON m.id=a.model_id WHERE a.id=? ";
 $stmt = $pdo->prepare($query4);
 
@@ -15,7 +15,7 @@ $query = "SELECT m.ime as mime,m.id as mid FROM modeli m ";
 $stmt1 = $pdo->prepare($query);
 $stmt1->execute();
 $options1 = "";
-
+//Dodajanje modelov v options, da jih prikaze v drop down meniju
 
 while ($row1 = $stmt1->fetch()) {
 

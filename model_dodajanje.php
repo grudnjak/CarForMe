@@ -1,12 +1,12 @@
 <?php
 include_once './header.php';
 include_once './database.php';
-
+//dodajanje modela forma
 $query3 = "SELECT ime FROM znamke z ";
 $stmt2 = $pdo->prepare($query3);
 $stmt2->execute();
 $options2 = "";
-
+//izpis modelov z option
 while ($row = $stmt2->fetch()) {
 
     $options2 = $options2 . "<option>$row[ime]</option>";

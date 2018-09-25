@@ -3,7 +3,7 @@
     include_once './database.php';
     
    $idapp = isset($_GET['id']) ? $_GET['id'] : '';
-
+//forma za editanje osebe
     
     $query4 = "SELECT o.id as oid ,o.ime as oime ,o.priimek as opriimek ,o.datum_roj as datroj,k.ime as kime,o.kraj_id as krajid FROM osebe o INNER JOIN kraji k ON k.id=o.kraj_id WHERE o.id=?";
     $stmt = $pdo->prepare($query4); 

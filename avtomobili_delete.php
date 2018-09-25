@@ -2,6 +2,7 @@
     include_once './session.php';
     include_once './database.php';
 
+    //delete avtomobila iz baze
     $id = (int) $_GET['id'];
     
     

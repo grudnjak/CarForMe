@@ -3,6 +3,7 @@
     include_once './database.php';
     $idapp = $_GET['id'];
 
+//pridobivanje pod o avtomobilu
 
 $query = "SELECT a.ime as aime ,a.naslov,k.ime,s.url as url,a.id FROM avtomobili a INNER JOIN kraji k ON k.id = a.kraj_id INNER JOIN slike s ON a.id=s.avtomobil_id  WHERE a.id = ? ";
 $stmt = $pdo->prepare($query);

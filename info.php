@@ -1,5 +1,6 @@
 <?php
     include_once './header.php';
+    //info o pdojetu
     ?>
 <section id="main" class="wrapper style1">
 				<header class="major">

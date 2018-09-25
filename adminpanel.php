@@ -2,6 +2,8 @@
     include_once './headeradmin.php';
     include_once './database.php';
     
+    
+    //prikazovanje counterjev na admin page
     $query = "SELECT COUNT(*) FROM avtomobili";
     $stmt = $pdo->prepare($query); 
     $stmt->execute();

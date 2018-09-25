@@ -1,5 +1,6 @@
 <?php
 
+//povezava z bazo
 $salt = 'dglkn349346$%dfh';
 
 $host = 'localhost';

@@ -1,4 +1,5 @@
 <?php
+//dodajanje avtomobila
 include_once './header.php';
 include_once './database.php';
 $query1 = "SELECT ime FROM kraji k ";
